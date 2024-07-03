@@ -26,6 +26,11 @@ devtools::install_deps(upgrade = "never")
 
 devtools::load_all(here::here())
 
+## Get species list ----
+
+species_list <- read.csv("~/Dropbox/projects/AJH_FloweRS/gbif-bulk/data/species_list.csv")
+#write.csv(species_list,"data/species_list.csv")
+
 
 ## Run Project ----
 

@@ -168,7 +168,12 @@ gbif_download_occ <- function(gbif_ids, by = 1000) {
     }
   }
   
+  ## Wait until ZIP files are done on GBIF servers ----
   
+  for (n in seq_len(k - 1)) {
+    rgbif::occ_download_wait(info_requests[[n]]$"download_key", 
+                             status_ping = 30) 
+  }
   
   ## Downloads ZIP files ----
   
