@@ -10,6 +10,7 @@
 #'   - Intersect GBIF occurrences w/ a World raster
 #'   - Compute species range size
 #'   - Compute species richness
+#'   - Output ranges
 #' 
 #' @author Nicolas Casajus \email{nicolas.casajus@fondationbiodiversite.fr}
 #' 
@@ -38,5 +39,6 @@ source(here::here("analyses", "retrieve_species_gbif_id.R"))
 source(here::here("analyses", "download_gbif_occurrences.R"))
 source(here::here("analyses", "clean_gbif_occurrences.R"))
 source(here::here("analyses", "intersect_gbif_occurrences.R"))
-source(here::here("analyses", "compute_species_rangesize.R"))
+source(here::here("analyses", "compute_species_rangesize_cells.R"))
 # source(here::here("analyses", "compute_species_richness.R"))
+source(here::here("analyses", "generate_output_table.R"))
